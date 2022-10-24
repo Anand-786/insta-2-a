@@ -43,7 +43,7 @@ function Header() {
         </div>
 
         {/* Right */}
-        <div className='flex items-center justify-end space-x-4'>
+        <div className='flex items-center justify-end md:space-x-4 space-x-1'>
           <HomeIcon onClick={() => router.push('/')} className='navBtn' />
           <PlusCircleIcon onClick={() => setOpen(true)} className='h-6 inline-flex 
           cursor-pointer hover:scale-125 transition-all duration-150 ease-out md:hidden shrink-0' />
