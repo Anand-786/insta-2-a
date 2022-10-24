@@ -31,7 +31,7 @@ function Header() {
         </div>
 
         {/* Middle-Search Input */}
-        <div className='max-w-xs'>
+        <div className='md:max-w-xs max-w-[150px]'>
           <div className='relative mt-1 p-1 rounded-md'>
             <div className='absolute inset-y-0 pl-2 flex items-center pointer-events-none'>
               <SearchIcon className='h-5 w-5 text-gray-500' />
