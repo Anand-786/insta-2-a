@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 import {
   SearchIcon,
@@ -45,6 +45,8 @@ function Header() {
         {/* Right */}
         <div className='flex items-center justify-end space-x-4'>
           <HomeIcon onClick={() => router.push('/')} className='navBtn' />
+          <PlusCircleIcon onClick={() => setOpen(true)} className='h-6 
+          cursor-pointer hover:scale-125 transition-all duration-150 ease-out md:hidden' />
           <MenuIcon className='h-6 md:hidden cursor-pointer w-10' />
           {session ? (
           <>
@@ -59,7 +61,8 @@ function Header() {
             <HeartIcon className='navBtn' />
 
             <img onClick={signOut} src={session?.user?.image} 
-            className='h-10 w-10 rounded-full cursor-pointer' alt='profile pic' />
+            className='h-10 w-10 rounded-full cursor-pointer hover:scale-125 
+            transition-all duration-150 ease-out' alt='profile pic' />
           </>
           ):(
             <button onClick={signIn}>Sign In</button>
