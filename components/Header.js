@@ -20,7 +20,7 @@ function Header() {
   const [open, setOpen] = useRecoilState(modalState);
   return (
     <div className='shadow-sm border-b bg-white sticky top-0 z-50'>
-      <div className='flex justify-between bg-white max-w-6xl mx-5 lg:mx-auto'>
+      <div className='flex justify-between bg-white max-w-6xl mx-2 lg:mx-auto'>
         {/* Left */}
 
         <div onClick={() => router.push('/')} className='relative hidden lg:inline-grid w-24 cursor-pointer'>
